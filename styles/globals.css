@@ -1,16 +1,54 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ====== Buttons ====== */
+.btn-primary {
+    @apply bg-darkBlue flex justify-center items-center w-[200px] h-12;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.btn-primary button {
+    @apply w-full h-full text-white font-public leading-[14.1px] tracking-[2px] text-xs uppercase;
 }
 
-* {
-  box-sizing: border-box;
+.btn-secondary {
+    @apply inline-block border-2 border-grayDarkBlue font-public text-sm leading-[14.1px] tracking-[2px] uppercase py-4 px-6 hover:bg-grayDarkBlue hover:text-white;
+}
+
+
+/* ====== Form Elements ======= */
+.input-field {
+    @apply flex flex-col space-y-3 w-60;
+}
+
+.input-field label {
+    @apply font-public text-[13px] font-bold text-grayDarkBlue leading-[30px];
+}
+
+.input-field input {
+    @apply w-full bg-lightGrey font-public text-[13px] leading-[30px] py-3 px-4 outline-none placeholder:text-[13px] placeholder:leading-[30px] border-2 border-transparent focus:border-2 focus:border-cyan;
+}
+.input-field input.error {
+    @apply border-2 border-brightRed;
+}
+
+.input-field .error-text {
+    @apply italic font-bold font-public leading-[11.75px] text-brightRed
+}
+
+
+/* ==== Global Sylings ==== */
+h1 {
+    @apply font-sans font-bold text-[50px] text-grayDarkBlue leading-[50px] tracking-[-0.45px];
+}
+
+h2 {
+    @apply font-sans font-bold text-[40px] leading-[42px] tracking-[-0.36px]
+}
+
+h3 {
+    @apply font-sans text-[32px] leading-[36px] tracking-[-0.29px]
 }
