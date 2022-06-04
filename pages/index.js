@@ -8,5 +8,3 @@ export default function Home() {
     </Layout>
   );
 }
-
-// px-6 lg:max-w-7xl lg:mx-auto
