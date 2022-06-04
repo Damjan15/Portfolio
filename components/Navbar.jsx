@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="relative px-6 py-6 lg:py-6 lg:max-w-5xl lg:mx-auto">
+    <nav className="relative px-6 py-6 lg:max-w-7xl lg:mx-auto">
       <div className="flex items-center justify-between">
         <div>
           <img src="/assets/logo.svg" alt="Logo" />

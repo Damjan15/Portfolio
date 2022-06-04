@@ -44,7 +44,7 @@
 
 @layer base {
   h1 {
-    @apply font-sans font-bold text-[50px] text-grayDarkBlue leading-[50px] tracking-[-0.45px];
+    @apply font-sans font-bold text-[40px] leading-[42px] tracking-[-0.36px] text-grayDarkBlue lg:text-[50px] lg:leading-[50px] lg:tracking-[-0.45px];
   }
 
   h2 {
@@ -53,5 +53,27 @@
 
   h3 {
     @apply font-sans text-[32px] leading-[36px] tracking-[-0.29px];
+  }
+}
+
+
+/* ==== Hero Background ==== */
+.hero {
+  background-image: url("/assets/homepage/mobile/image-homepage-hero@2x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@media(min-width: 768px	) {
+  .hero {
+    background-image: url("/assets/homepage/tablet/image-homepage-hero.jpg");
+  }
+}
+
+@media(min-width: 1024px) {
+  .hero {
+    background-image: url("/assets/homepage/desktop/image-homepage-hero.jpg");
   }
 }

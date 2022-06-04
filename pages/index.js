@@ -1,12 +1,12 @@
-import Head from "next/head";
+import { Layout } from "../containers"
+import { Hero } from "../components";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Damjan Stamenov | Front-end Web Developer</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-    </div>
+    <Layout title="Damjan Stamenov | Front-End Developer">
+      <Hero />
+    </Layout>
   );
 }
+
+// px-6 lg:max-w-7xl lg:mx-auto

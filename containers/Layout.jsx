@@ -1,13 +1,22 @@
-import { Footer, Navbar } from "../components"
+import Head from "next/head";
+import { Footer, Navbar } from "../components";
 
-const Layout = ({ children }) => {
+const Layout = ({ title, children }) => {
   return (
     <div>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-    </div>
-  )
-}
+      <Head>
+        <title>{title}</title>
+        <meta
+          name="description"
+          content="A front-end developer from Macedonia"
+        />
+      </Head>
 
-export default Layout
+      <Navbar />
+      <main className="px-6 lg:max-w-7xl lg:mx-auto">{children}</main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
