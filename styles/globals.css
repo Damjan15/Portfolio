@@ -19,14 +19,14 @@
 
 /* ====== Form Elements ======= */
 .input-field {
-  @apply flex flex-col space-y-3 w-60;
+  @apply flex flex-col space-y-3 w-full;
 }
 
 .input-field label {
   @apply font-public text-[13px] font-bold text-grayDarkBlue leading-[30px];
 }
 
-.input-field input {
+.input-field input, .input-field textarea {
   @apply w-full bg-lightGrey font-public text-[13px] leading-[30px] py-3 px-4 outline-none placeholder:text-[13px] placeholder:leading-[30px] border-2 border-transparent focus:border-2 focus:border-cyan;
 }
 .input-field input.error {
