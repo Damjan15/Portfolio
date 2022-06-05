@@ -3,7 +3,7 @@ import { Footer, Navbar } from "../components";
 
 const Layout = ({ title, children }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>{title}</title>
         <meta
@@ -12,10 +12,10 @@ const Layout = ({ title, children }) => {
         />
       </Head>
 
-      <Navbar />
-      <main className="px-6 lg:max-w-7xl lg:mx-auto">{children}</main>
-      <Footer />
-    </div>
+        <Navbar />
+        <main className="px-6 lg:max-w-7xl lg:mx-auto">{children}</main>
+       <Footer />
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-grayDarkBlue p-8">
+    <footer className="bg-grayDarkBlue p-8 mt-auto">
       <div className="px-6 flex flex-col items-center justify-center md:flex-row md:justify-between lg:max-w-7xl lg:mx-auto">
         <div className="flex flex-col items-center space-y-6 mb-8 md:flex-row md:space-y-0 md:mb-0">
           <div className="md:mr-8">
@@ -65,7 +65,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 };
 

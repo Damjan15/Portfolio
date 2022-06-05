@@ -5,10 +5,12 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="relative px-6 py-6 lg:max-w-7xl lg:mx-auto">
+    <nav className="w-full relative px-6 py-6 lg:max-w-7xl lg:mx-auto">
       <div className="flex items-center justify-between">
         <div>
-          <img src="/assets/logo.svg" alt="Logo" />
+          <Link href="/">
+            <img src="/assets/logo.svg" className="cursor-pointer" alt="Logo" />
+          </Link>
         </div>
 
         <button onClick={() => setOpen(!open)} className="md:hidden">
