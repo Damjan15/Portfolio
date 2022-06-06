@@ -32,7 +32,7 @@ const Footer = () => {
 
         <ul className="flex items-center gap-6 md:gap-4">
           <li>
-            <a href="https://github.com/Damjan15" target="_blank">
+            <a href="https://github.com/Damjan15" target="_blank" rel="noreferrer">
               <svg
               className="cursor-pointer fill-white hover:fill-cyan"
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const Footer = () => {
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/damjan-stamenov-a424951b8/" target="_blank">
+            <a href="https://www.linkedin.com/in/damjan-stamenov-a424951b8/" target="_blank" rel="noreferrer">
             <svg
               className="cursor-pointer fill-white hover:fill-cyan"
               xmlns="http://www.w3.org/2000/svg"
