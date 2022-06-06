@@ -10,7 +10,7 @@ const PrimaryButton = ({ children }) => {
           width="16"
           height="14"
         >
-          <g fill="none" fill-rule="evenodd">
+          <g fill="none" fillRule="evenodd">
             <path d="M0 9l8 4 8-4" />
             <path opacity=".5" d="M0 5l8 4 8-4" />
             <path opacity=".25" d="M0 1l8 4 8-4" />

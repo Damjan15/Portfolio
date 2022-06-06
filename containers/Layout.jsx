@@ -14,7 +14,7 @@ const Layout = ({ title, children }) => {
 
         <Navbar />
         <main className="px-6 lg:max-w-7xl lg:mx-auto">{children}</main>
-       <Footer />
+        <Footer />
     </>
   );
 };

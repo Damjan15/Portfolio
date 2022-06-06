@@ -15,7 +15,7 @@ const GetInTouch = () => {
         </p>
         <ul className="flex items-center gap-3 mt-3">
           <li>
-            <a href="/">
+            <a href="https://github.com/Damjan15" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
                 <path
                   fill="#33323D"
@@ -25,7 +25,7 @@ const GetInTouch = () => {
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://www.linkedin.com/in/damjan-stamenov-a424951b8/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#33323D"

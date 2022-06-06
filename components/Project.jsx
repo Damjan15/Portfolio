@@ -1,26 +1,27 @@
+import Link from "next/link"
 import { SecondaryButton } from "./buttons";
+import { motion } from "framer-motion";
 
-const Project = ({ newProject }) => {
+const Project = ({ project }) => {
   return (
-    <div className={`flex flex-col ${newProject ? "md:flex-row-reverse" : "md:flex-row"} md:items-center md:justify-between`}>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }} className={`flex flex-col ${project.new ? "md:flex-row-reverse" : "md:flex-row"} md:items-center md:justify-between`}>
       <div className="w-full mb-3 md:w-2/6 md:mb-0">
         <img
-          src="/assets/image-portfolio-manage.jpg"
+          src={project.cover.url}
           className="w-full"
           alt="Manage Cover"
         />
       </div>
       <div className="w-full space-y-4 text-center md:w-3/6 md:space-y-10 md:text-left">
-        <h2>Manage</h2>
+        <h2>{project.title}</h2>
         <p className="font-public text-grayDarkBlue">
-          This project required me to build a fully responsive landing page to
-          the designs provided. I used HTML5, along with CSS Grid and JavaScript
-          for the areas that required interactivity, such as the testimonial
-          slider.
+          { project.background}
         </p>
-        <SecondaryButton>View Project</SecondaryButton>
+        <SecondaryButton>
+          <Link href={`project/${project.slug}`}>View Project</Link>
+        </SecondaryButton>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

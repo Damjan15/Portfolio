@@ -42,6 +42,10 @@
     @apply text-xs leading-[14px] tracking-[2px] uppercase text-grayDarkBlue font-public hover:text-cyan;
 }
 
+.nav-active {
+  @apply text-xs leading-[14px] tracking-[2px] uppercase text-cyan font-public hover:text-grayDarkBlue
+}
+
 @layer base {
   h1 {
     @apply font-sans font-bold text-[40px] leading-[42px] tracking-[-0.36px] text-grayDarkBlue lg:text-[50px] lg:leading-[50px] lg:tracking-[-0.45px];
