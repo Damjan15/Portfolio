@@ -29,7 +29,7 @@ export default function SingleProject({ project }) {
 }
 
 export async function getStaticProps({ params }) {
-    const project = await getSingleProject(params.slug)
+    const project = await getSingleProject(params.slug) || null;
 
     return {
         props: {
@@ -46,5 +46,5 @@ export async function getStaticPaths() {
         params: { slug: project.slug }
     }))
 
-    return { paths, fallback: true }
+    return { paths, fallback: false }
 }
